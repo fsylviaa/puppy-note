@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>小狗记事本</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <script src="vendor/lucide.js" defer></script>
+  <script src="assets/characters.js" defer></script>
+  <script src="src/storage.js" defer></script>
+  <script src="src/export-svg.js" defer></script>
+  <script src="src/app.js" defer></script>
+</head>
+<body>
+<div id="puppy-notebook-prototype">
+  <div id="pn-phone" class="pn-phone" aria-label="小狗记事本手机交互原型">
+    <div class="pn-status"><span>9:41</span><span class="pn-demo">演示数据</span><span class="pn-system"><i data-lucide="signal" aria-hidden="true"></i><i data-lucide="wifi" aria-hidden="true"></i><i data-lucide="battery-full" aria-hidden="true"></i></span></div>
+    <header class="pn-masthead">
+      <div class="pn-brand"><span class="pn-logo"><i data-lucide="paw-print" aria-hidden="true"></i></span><div><h1>小狗记事本</h1><p id="pn-subtitle">把生活的小事，慢慢记下来</p></div></div>
+      <div class="pn-header-actions"><button type="button" class="pn-coins cursor-interaction" data-action="wallet" aria-label="查看狗狗币"><i data-lucide="paw-print" aria-hidden="true"></i><span id="pn-coins">30</span></button><button type="button" class="pn-icon cursor-interaction" data-action="settings" aria-label="设置"><i data-lucide="settings" aria-hidden="true"></i></button></div>
+    </header>
+    <button type="button" id="pn-round" class="pn-round cursor-interaction" data-action="round" aria-label="查看今日陪伴小目标"><span>今日陪伴</span><span id="pn-round-dots"></span><span id="pn-round-count">0 / 4</span><i data-lucide="chevron-right" aria-hidden="true"></i></button>
+    <main id="pn-main" class="pn-main"></main>
+    <nav class="pn-nav" aria-label="主导航">
+      <button type="button" class="cursor-interaction" data-action="nav" data-page="notes" aria-label="随手记"><i data-lucide="notebook-pen" aria-hidden="true"></i><span>随手记</span></button>
+      <button type="button" class="cursor-interaction" data-action="nav" data-page="tasks" aria-label="待办"><i data-lucide="circle-check" aria-hidden="true"></i><span>待办</span></button>
+      <button type="button" class="cursor-interaction" data-action="nav" data-page="home" aria-label="小窝"><i data-lucide="house" aria-hidden="true"></i><span>小窝</span></button>
+    </nav>
+    <div class="pn-home-indicator"></div>
+    <div id="pn-overlay" class="pn-overlay" hidden></div>
+    <div id="pn-toast" class="pn-toast" role="status" aria-live="polite" hidden></div>
+    <div id="pn-live" class="pn-sr" aria-live="polite"></div>
+  </div>
+</div>
+
+  <noscript>请开启 JavaScript，体验小狗记事本。</noscript>
+</body>
+</html>

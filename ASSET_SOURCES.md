@@ -1,0 +1,43 @@
+# 角色素材来源
+
+以下为原型内的 Moonlab Studio 线条小狗资源索引，PNG 原始图像未修改。
+
+- white-wave · Moonlab
+  - 参考页面：https://store.line.me/stickershop/product/33355995/zh-Hant
+  - 图片源：https://stickershop.line-scdn.net/stickershop/v1/sticker/828257344/iPhone/sticker@2x.png?v=1
+- white-heart · Moonlab
+  - 参考页面：https://store.line.me/stickershop/product/33355995/zh-Hant
+  - 图片源：https://stickershop.line-scdn.net/stickershop/v1/sticker/828257339/iPhone/sticker@2x.png?v=1
+- white-snack · Moonlab
+  - 参考页面：https://store.line.me/stickershop/product/33355995/zh-Hant
+  - 图片源：https://stickershop.line-scdn.net/stickershop/v1/sticker/828257357/iPhone/sticker@2x.png?v=1
+- white-dance · Moonlab
+  - 参考页面：https://store.line.me/stickershop/product/30397660/zh-Hant
+  - 图片源：https://stickershop.line-scdn.net/stickershop/v1/sticker/768838750/iPhone/sticker@2x.png?v=1
+- white-sleep · Moonlab
+  - 参考页面：https://store.line.me/stickershop/product/30397660/zh-Hant
+  - 图片源：https://stickershop.line-scdn.net/stickershop/v1/sticker/768838761/iPhone/sticker@2x.png?v=1
+- golden-wave · Moonlab
+  - 参考页面：https://store.line.me/stickershop/product/33356282/zh-Hant
+  - 图片源：https://stickershop.line-scdn.net/stickershop/v1/sticker/828263984/iPhone/sticker@2x.png?v=1
+- golden-heart · Moonlab
+  - 参考页面：https://store.line.me/stickershop/product/33356282/zh-Hant
+  - 图片源：https://stickershop.line-scdn.net/stickershop/v1/sticker/828263979/iPhone/sticker@2x.png?v=1
+- golden-snack · Moonlab
+  - 参考页面：https://store.line.me/stickershop/product/33356282/zh-Hant
+  - 图片源：https://stickershop.line-scdn.net/stickershop/v1/sticker/828263997/iPhone/sticker@2x.png?v=1
+- golden-dance · Moonlab
+  - 参考页面：https://store.line.me/stickershop/product/26955865/zh-Hant
+  - 图片源：https://stickershop.line-scdn.net/stickershop/v1/sticker/691422866/iPhone/sticker@2x.png?v=1
+- golden-sleep · Moonlab
+  - 参考页面：https://store.line.me/stickershop/product/24856095/zh-Hant
+  - 图片源：https://stickershop.line-scdn.net/stickershop/v1/sticker/632134588/iPhone/sticker@2x.png?v=1
+- golden-calm · Moonlab
+  - 参考页面：https://store.line.me/stickershop/product/26955865/zh-Hant
+  - 图片源：https://stickershop.line-scdn.net/stickershop/v1/sticker/691422870/iPhone/sticker@2x.png?v=1
+- white-calm · Moonlab
+  - 参考页面：https://store.line.me/stickershop/product/33355995/zh-Hant
+  - 图片源：https://stickershop.line-scdn.net/stickershop/v1/sticker/828257349/iPhone/sticker@2x.png?v=1
+- scene-photo · Moonlab
+  - 参考页面：https://store.line.me/stickershop/product/33355995/zh-Hant
+  - 图片源：https://stickershop.line-scdn.net/stickershop/v1/sticker/828257342/iPhone/sticker@2x.png?v=1
