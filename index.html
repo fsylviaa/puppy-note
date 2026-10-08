@@ -4,7 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#fffaf0">
   <title>小狗记事本</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="小狗记事本">
   <link rel="stylesheet" href="src/styles.css">
   <script src="vendor/lucide.js" defer></script>
   <script src="assets/characters.js" defer></script>
@@ -15,7 +22,7 @@
 <body>
 <div id="puppy-notebook-prototype">
   <div id="pn-phone" class="pn-phone" aria-label="小狗记事本手机交互原型">
-    <div class="pn-status"><span>9:41</span><span class="pn-demo">演示数据</span><span class="pn-system"><i data-lucide="signal" aria-hidden="true"></i><i data-lucide="wifi" aria-hidden="true"></i><i data-lucide="battery-full" aria-hidden="true"></i></span></div>
+    <div class="pn-status"><span>9:41</span><span class="pn-demo">演示功能</span><span class="pn-system"><i data-lucide="signal" aria-hidden="true"></i><i data-lucide="wifi" aria-hidden="true"></i><i data-lucide="battery-full" aria-hidden="true"></i></span></div>
     <header class="pn-masthead">
       <div class="pn-brand"><span class="pn-logo"><i data-lucide="paw-print" aria-hidden="true"></i></span><div><h1>小狗记事本</h1><p id="pn-subtitle">把生活的小事，慢慢记下来</p></div></div>
       <div class="pn-header-actions"><button type="button" class="pn-coins cursor-interaction" data-action="wallet" aria-label="查看狗狗币"><i data-lucide="paw-print" aria-hidden="true"></i><span id="pn-coins">30</span></button><button type="button" class="pn-icon cursor-interaction" data-action="settings" aria-label="设置"><i data-lucide="settings" aria-hidden="true"></i></button></div>
@@ -35,5 +42,38 @@
 </div>
 
   <noscript>请开启 JavaScript，体验小狗记事本。</noscript>
+  <script>
+    (function () {
+      'use strict';
+      // iOS 添加到主屏幕引导（仅 iOS Safari 且未以 standalone 方式打开时显示一次）
+      var isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+      if (!isIOS || window.navigator.standalone) return;
+      if (sessionStorage.getItem('pn-ios-prompt')) return;
+      var bar = document.createElement('div');
+      bar.id = 'pn-ios-install';
+      bar.setAttribute('role', 'dialog');
+      bar.setAttribute('aria-label', '添加到主屏幕提示');
+      bar.innerHTML = '<span class="txt">点击浏览器底部的<b>分享</b>按钮，选择<b>添加到主屏幕</b>，就能像 App 一样离线使用。</span>' +
+        '<button type="button">知道了</button>';
+      document.body.appendChild(bar);
+      bar.querySelector('button').addEventListener('click', function () {
+        sessionStorage.setItem('pn-ios-prompt', '1');
+        bar.remove();
+      });
+    })();
+  </script>
+  <style>
+    #pn-ios-install{position:fixed;left:12px;right:12px;bottom:16px;z-index:9999;display:flex;align-items:center;gap:10px;background:#39352e;color:#fffaf0;border-radius:14px;padding:12px 14px;font-size:13px;line-height:1.4;box-shadow:0 4px 18px rgba(0,0,0,.25);font-family:-apple-system,"PingFang SC",system-ui,sans-serif}
+    #pn-ios-install .txt{flex:1}
+    #pn-ios-install b{color:#ffda72}
+    #pn-ios-install button{flex-shrink:0;border:0;background:#ffda72;color:#39352e;border-radius:10px;padding:7px 12px;font-weight:700;font-size:12px;cursor:pointer}
+  </style>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('service-worker.js').catch(function () {});
+      });
+    }
+  </script>
 </body>
 </html>
